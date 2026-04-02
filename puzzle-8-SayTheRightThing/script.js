@@ -1,0 +1,34 @@
+let sequence = [];
+
+function checkInput() {
+    let input = document.getElementById("userInput").value.toLowerCase();
+    let response = document.getElementById("response");
+
+    sequence.push(input);
+
+    if (sequence.length > 3) {
+        sequence.shift();
+    }
+
+    if (input === "listen") {
+        response.innerText = "It heard you.";
+    } 
+    else if (input === "closer") {
+        response.innerText = "Not everything is said out loud...";
+    } 
+    else if (input === "truth") {
+        response.innerText = "You are almost there.";
+    } 
+    else {
+        response.innerText = "It doesn’t respond to that.";
+    }
+
+    let correct = ["lis"+"ten", "clo"+"ser", "tru"+"th"];
+
+    if (JSON.stringify(sequence) === JSON.stringify(correct)) {
+        response.innerHTML = `
+        It finally responded...<br><br>
+        <a href="SayTheRightThing_Flag.zip" download>Download it.</a>
+        `;
+    }
+}

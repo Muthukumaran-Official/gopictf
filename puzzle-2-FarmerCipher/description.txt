@@ -1,0 +1,13 @@
+A desperate farmer had 64 calves.
+
+A strange disease spread through the farm, and one by one the calves died.
+
+Only 16 rotten calves remained.
+
+An old village wizard gave the farmer a magical spell hidden in a message file.
+
+The wizard said:
+
+"The number of the remaining calves holds the key to revealing the truth."
+
+Decode the spell and reveal the flag.
